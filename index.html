@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChatCoin | Programmable Profile Layer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'JetBrains Mono', monospace;
+      background-color: #0f0f0f;
+      color: #00ffcc;
+    }
+    .terminal {
+      background: #101010;
+      border: 2px solid #00ffcc;
+      padding: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 20px #00ffcc;
+      white-space: pre-wrap;
+    }
+    .cursor {
+      animation: blink 1s steps(2, start) infinite;
+    }
+    @keyframes blink {
+      to { visibility: hidden; }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+  <div class="max-w-4xl w-full">
+    <div class="mt-10 text-center">
+      <h2 class="text-2xl text-white mb-2">🚀 What is ChatCoin?</h2>
+      <p class="text-green-300 max-w-2xl mx-auto">
+        ChatCoin is an operating system for decentralized life. Every profile is a programmable identity, wallet, and AI agent. Use it to create dApps, launch economies, or build digital sovereigns.
+      </p>
+    </div>
+
+    <div class="mt-10 text-center">
+      <h2 class="text-xl text-white mb-2">📡 Core Technologies</h2>
+      <ul class="text-green-200 list-disc list-inside">
+        <li>Cosmos SDK + EVM Compatibility</li>
+        <li>ProfileScript DSL + WebAssembly Runtime</li>
+        <li>ERC-6551, DID, zk-SNARKs, Verifiable Credentials</li>
+        <li>IPFS, Arweave, Ceramic for hybrid storage</li>
+        <li>Firecracker MicroVM AI execution</li>
+      </ul>
+    </div>
+
+    <div class="mt-10 text-center">
+      <a href="https://github.com/chatcoinio/" target="_blank" class="inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-md shadow">
+        🌐 Visit GitHub
+      </a>
+    </div>
+
+    <footer class="mt-10 text-center text-green-500 text-xs">
+      Built for the future. © 2025 ChatCoin
+    </footer>
+  </div>
+</body>
+</html>
