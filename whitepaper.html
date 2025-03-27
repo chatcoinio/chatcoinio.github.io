@@ -1,27 +1,54 @@
-← Back to Main
-📄 ChatCoin Whitepaper
-Final Submission Deadline: Q2 2025
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChatCoin Whitepaper</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <style>
+    body { background-color: #0f0f0f; color: #00ffcc; font-family: 'JetBrains Mono', monospace; }
+    h1, h2, h3 { color: #ffffff; margin-top: 2rem; }
+    pre { background: #111; padding: 1rem; border-left: 4px solid #00ffcc; overflow-x: auto; }
+    a { color: #00ffcc; text-decoration: underline; }
+    .section-link:hover { text-decoration: underline; cursor: pointer; }
+  </style>
+</head>
+<body class="p-6">
+  <!-- Back Button -->
+  <a href="index.html" class="text-green-400 hover:text-green-300 text-sm">← Back to Main</a>
 
-📚 Table of Contents
-1. Abstract
-2. Introduction
-3. Architecture
-4. Blockchain Design
-5. Tokenomics
-6. Security
-7. AI + Automation
-8. Real-World Application
-9. Interoperability
-10. Future Vision
-11. Roadmap
-12. Community & Governance
-13. Appendix
-14. Code Example
-15. Technical Deep Dive
-14. Code Example
-This JavaScript function creates a valid NFTx transaction packet to transmit encrypted payloads between programmable profiles.
+  <h1 class="text-3xl mt-4">📄 ChatCoin Whitepaper</h1>
+  <p class="text-sm text-green-400">Final Submission Deadline: Q2 2025</p>
 
-const createNFTxPacket = ({
+  <!-- Table of Contents -->
+  <nav class="mt-4 text-sm">
+    <h2 class="text-xl">📚 Table of Contents</h2>
+    <ul class="list-disc list-inside">
+      <li><a href="#abstract" class="section-link">1. Abstract</a></li>
+      <li><a href="#introduction" class="section-link">2. Introduction</a></li>
+      <li><a href="#architecture" class="section-link">3. Architecture</a></li>
+      <li><a href="#blockchain" class="section-link">4. Blockchain Design</a></li>
+      <li><a href="#tokenomics" class="section-link">5. Tokenomics</a></li>
+      <li><a href="#security" class="section-link">6. Security</a></li>
+      <li><a href="#ai" class="section-link">7. AI + Automation</a></li>
+      <li><a href="#realworld" class="section-link">8. Real-World Application</a></li>
+      <li><a href="#interoperability" class="section-link">9. Interoperability</a></li>
+      <li><a href="#future" class="section-link">10. Future Vision</a></li>
+      <li><a href="#roadmap" class="section-link">11. Roadmap</a></li>
+      <li><a href="#governance" class="section-link">12. Community & Governance</a></li>
+      <li><a href="#appendix" class="section-link">13. Appendix</a></li>
+      <li><a href="#code" class="section-link">14. Code Example</a></li>
+      <li><a href="#deepdive" class="section-link">15. Technical Deep Dive</a></li>
+    </ul>
+  </nav>
+
+  <!-- Existing Sections... (unchanged) -->
+
+  <section id="code">
+    <h2>14. Code Example</h2>
+    <p>This JavaScript function creates a valid NFTx transaction packet to transmit encrypted payloads between programmable profiles.</p>
+    <pre><code>const createNFTxPacket = ({
   sender,
   receiver,
   profileType,
@@ -45,10 +72,13 @@ const createNFTxPacket = ({
     sync: Date.now(),
     payload
   };
-};
-15. Technical Deep Dive
-📦 NFTx Packet Structure
-packet-nftx:
+};</code></pre>
+  </section>
+
+  <section id="deepdive">
+    <h2>15. Technical Deep Dive</h2>
+    <h3>📦 NFTx Packet Structure</h3>
+    <pre><code>packet-nftx:
   protocol_version: uint8      # 0-7
   network_code: uint8          # 8-15
   sender_wallet_id: uint256    # 16-47
@@ -60,11 +90,17 @@ packet-nftx:
   gas_credit: uint32           # 192-223
   permission_flags: uint16     # 224-239
   sync_pulse: uint16           # 240-255
-  payload: bytes               # 256-511+
-🔒 Security Flow
-Validate permission flags
-Verify signature using profile public key
-Decrypt payload (if private)
-Execute smart logic header
-Store logs on chain
-Reward sender if applicable
+  payload: bytes               # 256-511+</code></pre>
+
+    <h3>🔒 Security Flow</h3>
+    <ul class="list-disc list-inside">
+      <li>Validate permission flags</li>
+      <li>Verify signature using profile public key</li>
+      <li>Decrypt payload (if private)</li>
+      <li>Execute smart logic header</li>
+      <li>Store logs on chain</li>
+      <li>Reward sender if applicable</li>
+    </ul>
+  </section>
+</body>
+</html>
